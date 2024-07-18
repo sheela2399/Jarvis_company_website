@@ -317,7 +317,11 @@ section {
 /* start section serve  */
 .JV-sevre {
     padding-top: 110px;
+}
 
+.cards-column{
+    padding: 0px 70px;
+    width: 100%;
 }
 
 .column {
@@ -410,7 +414,7 @@ section {
 
 /*  start collaborators part*/
 .JV-collaboration {
-    margin: 108px 0px 80px 0px;
+    margin-top: 108px;
 }
 
 .JV-collaboration .container {
@@ -444,13 +448,17 @@ section {
   
   .collab-logo img {
     cursor: pointer;
-    filter: grayscale(1);
-    transition: all 0.3s ease-in-out;
+    filter: grayscale(1);   
   }
   
   .collab-logo img:hover {
     filter: grayscale(0);
     scale: 1.1;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .collab-logo{
+    border: none;
   }
 
   /* start Media part */
@@ -487,6 +495,164 @@ section {
     filter: grayscale(1)
   }
   
-/*  */
+/* start contact form part */
+.JV-contact{
+    padding-top: 108px;
+    padding-bottom: 108px;
+}
 
+.JV-contact .container{
+ width: 100%;
+padding: 0px 15px;
+max-width: 1230px;
+margin: 0 auto;
+}
+
+.contact-form{
+    flex: 0 0 auto;
+    width: auto;
+    border-radius: 16px;
+  border: 1px solid rgba(21, 102, 214, 0.3);
+}
+
+.contact-parts{
+    display: flex;
+}
+/* JV contact left side */
+.blue-background {
+    background-color: #1566d6;
+    height: 100%;
+    width: 320px;
+    padding: 72px 50px;
+    border-radius: 16px 0 0 16px;
+  }
+
+
+  .blue-background .call-logo{
+    width: 162px;
+    height: 162px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-bottom: 52px;
+  }
+
+  .blue-background .JV-title, .text-extra-big{
+    color: white;
+  }
+
+/* JV contact Right side */
+.JV-contact .Right-side-contact{
+    padding: 50px 70px;
+}
+
+.select-options{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.select-options input[type="checkbox"] {
+    display: none;
+  }
   
+  .option {
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-right: 10px;
+    margin-bottom: 10px; 
+    border-radius: 50px;
+    border: 1px solid #ccc;
+  }
+
+  .select-options .selected {
+    background-color: blue;
+    border-color: blue;
+    color: white;
+  }
+
+  /* .select-options:checked{
+    background-color: blue;
+    border-color: blue;
+    color: white;
+  } */
+
+  .input-form .row{
+    display: flex;
+  }
+
+  .input-form .row1 {
+    display: flex;
+    margin-top: 48px;
+  }
+
+  .input-label{
+    display: block;
+  font-size: 14px;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  margin: 8px ;
+  }
+
+  .form-group input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;  
+  }
+  
+  .row .first-row {
+    width: 50%;
+  }
+
+  .row .first-name,
+.row .email {
+  margin-right: 20px;
+}
+
+.country-code {
+    display: flex;
+    border-radius: 8px;
+    border: 1px solid #bfbfbf;
+    background: #fff;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  }
+
+  .countries-option {
+    padding: 12px 12px 12px 16px;
+    width: 128px;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0);
+  } 
+
+  .form-group #phone-no {
+    border: 0;
+  }
+
+  .row3 {
+    margin-top: 20px;
+  }
+
+
+  textarea.form-control {
+    height: 112px;
+    padding: 10px 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px; 
+  }
+
+  .btn-enqiry{
+    background-color: #1566d6;
+  border-color: #1566d6;
+  color: #ffffff;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 16px 28px;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 155.556%;
+  }
