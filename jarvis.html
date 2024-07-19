@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jarvis</title>
     <link rel="stylesheet" href="jarvis.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -15,14 +16,13 @@
 <body>
     <!-- start navbar -->
     <nav class="Navbar" id="Header">
-        <div class="Container dis-row-around
-        ">
+        <div class="container dis-row-around">
             <a href="#" class="nav-logo dis-row-center">
                 <img src="jarvis_images/Jarvis-logo.svg" alt="logo">
             </a>
-            <!-- <button class="nav-toggler" data-bs-toggle="collapse">
-        <img src="https://institution.jarvisinvest.com/assets/images/general/menu.svg">
-       </button>    -->
+            <a href="#nav-list"  class="nav-toggler" data-bs-toggle="collapse">
+        <img src="https://institution.jarvisinvest.com/assets/images/general/menu.svg" class="nav-toggler-img">
+            </a>   
             <div id="nav-expand">
                 <ul id="nav-list" class="dis-row-around">
                     <li class="nav-item active dis-row-center"><a class="nav-link " href="#">Home</a></li>
@@ -36,10 +36,10 @@
                     <li class="nav-item dis-row-center"><a class="nav-link" href="#">Contact Us</a></li>
                     <li class="nav-item dis-row-center"><a class="nav-link" href="#">
                             <img src="https://institution.jarvisinvest.com/assets/icons/retail-icon.svg"
-                                style="margin-right: 5px;">
+                                style="margin-right: 5px;" class="icon">
                             Retail
                             <img src="https://institution.jarvisinvest.com/assets/icons/right-arrow-icon.svg"
-                                style="margin-left: 5px;"></a></li>
+                                style="margin-left: 5px;" class="icon"></a></li>
 
                     <li class="nav-item dis-row-center"><a class="nav-link btn-primary" href="#">
                             Schedule Demo
@@ -89,14 +89,14 @@
 
             <div class="features-main-div dis-row-center">
                 <div class="features-columns dis-col-even">
-                    <div class="features-box dis-row-even">
+                    <div class="features-box dis-row-even First">
                         <img src="jarvis_images/chart.svg" alt="chart">
                         <div class="features-box-content">
                             <div class="text-extra-big mb-2">40 Mn data Points</div>
                             <div>The amount of data JARVIS Analyzes per market on a daily basis</div>
                         </div>
                     </div>
-                    <div class="features-box dis-row-around">
+                    <div class="features-box dis-row-around Second">
                         <img src="jarvis_images/timer.svg" alt="timer">
                         <div class="features-box-content">
                             <div class="text-extra-big mb-2">Proprietary Deep Learning Models
@@ -105,7 +105,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="features-box dis-row-around">
+                    <div class="features-box dis-row-around Third">
                         <img src="jarvis_images/shieldtick.svg" alt="shieldtick">
                         <div class="features-box-content">
                             <div class="text-extra-big mb-2">Intelligent Insights
@@ -116,7 +116,8 @@
                     </div>
                 </div>
                 <div class="features-columns">
-                    <img src="jarvis_images/jarvis-graph.svg" alt="jarvis-graph">
+                    <img src="jarvis_images/jarvis-graph.svg" class="jarvis-graph"
+                    alt="jarvis-graph">
                 </div>
 
 
@@ -263,104 +264,123 @@
                 <div class="text-extra-big">Access India’s top broking platforms for a seamless execution experience.
                 </div>
             </div>
+            
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="jarvis_partners_img_container swiper-slide">
+                        <div class="row_img">
+                            <img src="jarvis_images/partner1.svg" alt="">
+                        </div>
 
-            <div class="partner-slider">
-                <div class="partner-slot1 dis-row-center">
-                    <div class="partner-logo ">
-                        <img src="jarvis_images/partner1.svg" alt="partner-logo">
+                        <div class="row_img">
+                            <img src="jarvis_images/partner2.svg" alt="">
+                        </div>
+
+                        <div class="row_img">
+                            <img src="jarvis_images/partner3.svg" alt="">
+                        </div>
+
+                        <div class="row_img">
+                            <img src="jarvis_images/partner4.svg" alt="">
+                        </div>
+
+                        <div class="row_img">
+                            <img src="jarvis_images/partner5.svg" alt="">
+                        </div>
+
+                        <div class="row_img">
+                            <img src="jarvis_images/partner6.svg" alt="">
+                        </div>
+
+                        <div class="row_img">
+                            <img src="jarvis_images/partner7.svg" alt="">
+                        </div>
+
+                        <div class="row_img">
+                            <img src="jarvis_images/partner8.svg" alt="">
+                        </div>
+
+                        <div class="row_img">
+                            <img src="jarvis_images/partner9.svg" alt="">
+                        </div>
+
+                        <div class="row_img">
+                            <img src="jarvis_images/partner10.svg" alt="">
+                        </div>
+                        <div class="row_img">
+                            <img src="jarvis_images/partner11.svg" alt="">
+                        </div>
+                        <div class="row_img">
+                            <img src="jarvis_images/partner12.svg" alt="">
+                        </div>
+
+                        <div class="row_img">
+                            <img src="jarvis_images/partner14 (1).svg" alt="">
+                        </div>
+
+                        <div class="row_img">
+                            <img src="jarvis_images/partner13.svg" alt="">
+                        </div>
+
                     </div>
-                    <div class="partner-logo">
-                        <img src="jarvis_images/partner2.svg" alt="partner-logo">
-                    </div>
-                    <div class="partner-logo">
-                        <img src="jarvis_images/partner3.svg" alt="partner-logo">
-                    </div>
-                    <div class="partner-logo">
-                        <img src="jarvis_images/partner4.svg" alt="partner-logo">
-                    </div>
-                    <div class="partner-logo">
-                        <img src="jarvis_images/partner5.svg" alt="partner-logo">
-                    </div>
-                    <div class="partner-logo">
-                        <img src="jarvis_images/partner6.svg" alt="partner-logo">
-                    </div>
-                    <div class="partner-logo">
-                        <img src="jarvis_images/partner7.svg" alt="partner-logo">
-                    </div>
-                    <div class="partner-logo">
-                        <img src="jarvis_images/partner8.svg" alt="partner-logo">
-                    </div>
-                    <div class="partner-logo">
-                        <img src="jarvis_images/partner9.svg" alt="partner-logo">
-                    </div>
-                    <div class="partner-logo">
-                        <img src="jarvis_images/partner10.svg" alt="partner-logo">
-                    </div>
-                    <div class="partner-logo">
-                        <img src="jarvis_images/partner11.svg" alt="partner-logo">
-                    </div>
-                    <div class="partner-logo">
-                        <img src="jarvis_images/partner12.svg" alt="partner-logo">
-                    </div>
-                    <div class="partner-logo">
-                        <img src="jarvis_images/partner13.svg" alt="partner-logo">
-                    </div>
-                    <div class="partner-logo">
-                        <img src="jarvis_images/partner14 (1).svg" alt="partner-logo">
+                    <div class="jarvis_partners_img_container swiper-slide">
+                        <div class="row_img">
+                            <img src="jarvis_images/partner15.png" alt="">
+                            <img src="" alt="">
+                        </div>
+
+                        <div class="row_img">
+                            <img src="jarvis_images/partner16.png" alt="">
+                        </div>
+
+                        <div class="row_img">
+                            <img src="jarvis_images/partner17.png" alt="">
+                        </div>
+
+                        <div class="row_img">
+                            <img src="jarvis_images/partner18.png" alt="">
+                        </div>
+
+                        <div class="row_img">
+                            <img src="jarvis_images/partner19.png" alt="">
+                        </div>
+
+                        <div class="row_img">
+                            <img src="jarvis_images/partner20.png" alt="">
+                        </div>
+
+                        <div class="row_img">
+                            <img src="jarvis_images/partner21.png" alt="">
+                        </div>
+
+                        <div class="row_img">
+                            <img src="jarvis_images/partner22.png" alt="">
+                        </div>
+
+                        <div class="row_img">
+                            <img src="jarvis_images/partner23.png" alt="">
+                        </div>
+
+                        <div class="row_img">
+                            <img src="jarvis_images/partner24.png" alt="">
+                        </div>
+                        <div class="row_img">
+                            <img src="jarvis_images/partner25.png" alt="">
+                        </div>
+                        <div class="row_img">
+                            <img src="jarvis_images/partner26.png" alt="">
+                        </div>
+
+                        <div class="row_img">
+                            <img src="jarvis_images/partner27.png" alt="">
+                        </div>
                     </div>
                 </div>
-
-                <div class="partners-slot2 dis-row-center" style="display: none;">
-                    <div class="partner-logo">
-                        <img src="jarvis_images/partner15.svg" alt="partner-logo">
-                    </div>
-                    <div class="partner-logo">
-                        <img src="jarvis_images/partner16.png" alt="partner-logo">
-                    </div>
-                    <div class="partner-logo">
-                        <img src="jarvis_images/partner17.png" alt="partner-logo">
-                    </div>
-                    <div class="partner-logo">
-                        <img src="jarvis_images/partner18.png" alt="partner-logo">
-                    </div>
-                    <div class="partner-logo">
-                        <img src="jarvis_images/partner19.png" alt="partner-logo">
-                    </div>
-                    <div class="partner-logo">
-                        <img src="jarvis_images/partner20.png" alt="partner-logo">
-                    </div>
-                    <div class="partner-logo">
-                        <img src="jarvis_images/partner21.png" alt="partner-logo">
-                    </div>
-                    <div class="partner-logo">
-                        <img src="jarvis_images/partner22.png" alt="partner-logo">
-                    </div>
-                    <div class="partner-logo">
-                        <img src="jarvis_images/partner23.png" alt="partner-logo">
-                    </div>
-                    <div class="partner-logo">
-                        <img src="jarvis_images/partner24.png" alt="partner-logo">
-                    </div>
-                    <div class="partner-logo">
-                        <img src="jarvis_images/partner25.png" alt="partner-logo">
-                    </div>
-                    <div class="partner-logo">
-                        <img src="jarvis_images/partner26.png" alt="partner-logo">
-                    </div>
-                    <div class="partner-logo">
-                        <img src="jarvis_images/partner27.png" alt="partner-logo">
-                    </div>
-                </div>
+                <div class="swiper-pagination"></div>
             </div>
-
-            <div class="slider-radio-buttons dis-row-center">
-                <div class="buttons" id="button1"></div>
-                <div class="buttons" id="button2"></div>
-            </div>
-        </div>
         </div>
     </section>
-
+    
     <!-- start collaboratos part -->
     <section class="JV-collaboration dis-col-center">
         <div class="container">
@@ -653,9 +673,7 @@
                     </div>
 
                     <div class="product-menu">
-
-                        <div class="JV-subtitle">India</div>
-
+                        <div class="footer-title mb-2">India</div>
                         <div class="footer-product-list mb-4">
                             <div class="office-address">
                                 7th floor, Dheeraj Kawal, Lal Bahadur Shashtri Road, Vikhroli West, Mumbai, Maharashtra
@@ -672,9 +690,9 @@
 
                             <div class="google-map">
                                 <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.9455441750824!2d72.92290207455082!3d19.110044750904155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c7643060441d%3A0x5da78ef292bd77a2!2sDheeraj%20Kawal%20Commercial%20Building!5e0!3m2!1sen!2sin!4v1720893229596!5m2!1sen!2sin"
-                                width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe>  
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.9455441750824!2d72.92290207455082!3d19.110044750904155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c7643060441d%3A0x5da78ef292bd77a2!2sDheeraj%20Kawal%20Commercial%20Building!5e0!3m2!1sen!2sin!4v1720893229596!5m2!1sen!2sin"
+                                    width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
                     </div>
@@ -687,24 +705,25 @@
                         <img src="jarvis_images/bsal (1).svg" alt="BSAL">
                         1560
                     </div>
-                    </div>
-                    <div class="SEBI">
-                        <div class="text-medium mb3">SEBI Registered Investment Advisor</div>
-                        <div class="extra-info"><img src="jarvis_images/SEBI.png" alt="SEBI"> INA 000013235
-                        </div>
+                </div>
+                <div class="SEBI">
+                    <div class="text-medium mb3">SEBI Registered Investment Advisor</div>
+                    <div class="extra-info"><img src="jarvis_images/SEBI.png" alt="SEBI"> INA 000013235
                     </div>
                 </div>
             </div>
         </div>
+        </div>
 
         <div class="copyright dis-row-between">
-                    <div class="col-auto">Ventugrow Consultants Pvt. Ltd.</div>
-                    <div class="col-auto">© 2023 All Rights Reserved</div>
+            <div class="col-auto">Ventugrow Consultants Pvt. Ltd.</div>
+            <div class="col-auto">© 2023 All Rights Reserved</div>
         </div>
     </footer>
 
-<!-- footer end -->
-
+    <!-- footer end -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>

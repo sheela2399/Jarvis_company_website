@@ -135,11 +135,14 @@ h1 {
     padding: 0 14px;
     margin: 10px;
     height: 76px;
-
 }
 
 .nav-logo {
     margin: 10px 40px;
+}
+
+.nav-toggler {
+    display: none;
 }
 
 #nav-expand {
@@ -191,6 +194,10 @@ h1 {
 
 .JV-intro .container {
     max-width: 880px;
+}
+
+.JV-intro .container .text-extra-big {
+    color: #303236;
 }
 
 section {
@@ -277,6 +284,11 @@ section {
     width: 50%;
 }
 
+.features-columns .jarvis-graph {
+    padding-bottom: 10px;
+    margin: 27px 5px;
+}
+
 .features-box {
     max-width: 490px;
     min-height: 190px;
@@ -284,8 +296,23 @@ section {
     border: 1px solid rgba(21, 102, 214, .18);
     ;
     padding: 10px;
-    margin: 12px;
+    margin: 12px;   
+}
+
+.features-box-content .text-extra-big{
+    color: #303236;
+}
+
+.First{
     background-color: rgba(43, 112, 197, .01);
+}
+
+.Second{
+    background-color: rgba(43,112,197,.04);
+}
+
+.Third{
+    background-color: rgba(43, 112, 197, .1);
 }
 
 .features-box>img {
@@ -303,7 +330,7 @@ section {
     height: 600px;
     padding: 88px 0px;
     background: #FFFFFF;
-    background-color: #ddedec;
+    background-color: #f7f9fd;
     margin-top: 200px;
     margin-bottom: 150px;
 }
@@ -367,59 +394,47 @@ section {
 /* start partners part */
 .JV-partners {
     width: 100%;
-    height: 750px;
-    padding: 108px 0px 0px;
+    padding: 5rem 0rem;
 }
 
-.JV-partners .text-extra-big{
+.JV-partners .text-extra-big {
     color: #303236;
 }
 
-.partner-slider {
-    margin-top: 50px;
-    margin-bottom: 30px;
-}
-
-.partner-slot1,
-.partners-slot2 {
-    height: 400px;
+.jarvis_partners_img_container {
     width: 100%;
-    flex-wrap: wrap;
+    padding: 20px;
+    display: grid !important;
+    place-items: center;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 3rem;
+    row-gap: 0.8rem;
+
 }
 
-.partner-logo,
-.collab-logo {
-    height: 90px;
-    width: 178px;
-    padding: 1px;
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.row_img {
+    /* width: calc(100% / 5); */
+    width: 100%;
     display: flex;
+    border: 1px solid #30323630;
+    height: 90px;
+    border-radius: 20px;
     justify-content: center;
     align-items: center;
-    margin: 10px;
-    border: 1px solid #ccc;
-    border-radius: 16px;
 }
 
-/* .partners-slot2 {
-    display: hidden;
-} */
+.jarvis_partners_img_container img {
+    cursor: pointer;
+    width: 100%;
+    object-fit: none;
 
-
-.slider-radio-buttons .buttons {
-    height: 15px;
-    width: 15px;
-    margin-right: 10px;
-    border-radius: 50%;
-    background-color: #a0afc5;
 }
-
-.slider-radio-buttons>.buttons:active {
-    width: 30px;
-    border-radius: 50px;
-    transition: all 0s ease-in-out;
-    background-color: #0b5ed7;
-}
-
 
 /*  start collaborators part*/
 .JV-collaboration {
@@ -455,6 +470,18 @@ section {
     height: 90px;
 }
 
+.collab-logo {
+    height: 90px;
+    width: 178px;
+    padding: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+}
+
 .collab-logo img {
     cursor: pointer;
     filter: grayscale(1);
@@ -470,7 +497,7 @@ section {
     border: none;
 }
 
-.JV-collaboration .text-extra-big{
+.JV-collaboration .text-extra-big {
     color: #303236;
 }
 
@@ -675,11 +702,11 @@ textarea.form-control {
 /* footer part */
 .footer-section {
     background-color: #f6f9fd;
-    padding-top: 64px;
 }
 
 .footer-section .footer-head {
-    padding-bottom: 48px;
+
+    padding: 48px 10px;
     border-bottom: 1px solid #d5d5d5;
     margin: 0 10px 48px 10px;
 }
@@ -690,6 +717,7 @@ textarea.form-control {
 
 .site-map {
     margin-bottom: 90px;
+    padding: 15px;
 }
 
 .site-map .footer-title {
@@ -720,7 +748,15 @@ textarea.form-control {
 .office-timming {
     color: #626b7f;
     margin-bottom: 18px;
+    display: flex;
 }
+
+.office-email i,
+.office-timming i {
+    margin-right: 5px;
+}
+
+
 
 .google-map {
     padding-bottom: 50%;
@@ -759,16 +795,151 @@ textarea.form-control {
     text-align: right;
 }
 
+.copyright {
+    padding: 48px 80px;
+    background-color: #d9e0eb;
+}
+
 .col-auto {
     flex: 0 0 auto;
     width: auto;
-    margin: 15px;
-}
+    color: #626b7f;
 
-.copyrights {
-    padding: 100px;
-    background-color: #3a7ed6;
-    margin:15px;
 }
 
 /* footer end */
+
+/* Responsive code starts */
+
+@media (max-width: 600px) {
+    /* start navbar */
+    .Navbar .container {
+        justify-content: space-between;
+    }
+
+    .nav-toggler{
+        display: block;
+        border: none;
+        margin: 0 auto;
+    }
+    .nav-toggler-img {
+        display: block;
+    }
+
+    #nav-expand,
+    #nav-list {
+        display: none;
+    }
+
+    .Navbar .icon {
+        display: block;
+    }
+
+        /* section intro */
+
+    .JV-intro {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .container {
+        padding: 50px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 35px;
+    } 
+
+    .text-extra-big{
+        font-size: 18px;
+    }
+
+    .JV-intro .btn{
+padding: 15px;
+width:200px;
+    }
+
+/* JV-demo-video part*/
+.container-fluid{
+    padding: 10px ;
+    margin-bottom: 0;
+}
+
+/* JV-features */
+
+.JV-features .JV-title{
+    font-size: 30px;
+}
+
+.JV-features .container{
+    padding-top: 0px;
+}
+
+.features-columns{
+    flex-direction: row;
+}
+
+
+    /* Section features */
+    /* .features-columns{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+
+
+/* JV why-us */
+.JV-why-us .container{
+    max-width: 600px;
+    height: 1000px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.JV-why-us .JV-title,.JV-subtitle{
+   text-align: center; 
+}
+
+.numbers{
+    flex-direction: column;
+}
+
+
+
+
+
+
+/* JV-serve Part */
+
+.JV-serve .columns{
+    flex-direction: column;
+}
+
+.JV-serve .JV-title{
+    font-size: 35px;
+}
+
+.JV-sevre .container{
+    padding-top: 0;
+}
+
+
+
+/* JV-contact */
+
+
+
+
+
+
+
+    /* footer */
+    /* .footer-head {
+        padding-top: 10px;
+        justify-content: center;
+    }
+/*  */
+}
