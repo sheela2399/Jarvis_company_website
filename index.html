@@ -48,11 +48,11 @@
             </div>
             <a href="javascript:void(0);" class="burger-icon" onclick="myFunction()">
                 <img src="https://institution.jarvisinvest.com/assets/images/general/menu.svg" class="nav-toggler-img">
-              </a>
-            
+            </a>
+
         </div>
     </nav>
-    
+
     <!-- section intro -->
     <section class="JV-intro dis-col-center">
         <div class="container text-center">
@@ -121,8 +121,7 @@
                     </div>
                 </div>
                 <div class="features-columns" id="features-columns2">
-                    <img src="jarvis_images/jarvis-graph.svg" class="jarvis-graph"
-                    alt="jarvis-graph">
+                    <img src="jarvis_images/jarvis-graph.svg" class="jarvis-graph" alt="jarvis-graph">
                 </div>
             </div>
         </div>
@@ -178,7 +177,7 @@
 
             <div class="cards-column">
                 <div class="columns dis-row-around">
-                    
+
                     <div class="column">
                         <a href="#broker.php">
                             <div class="service-box">
@@ -268,7 +267,7 @@
                 <div class="text-extra-big">Access India’s top broking platforms for a seamless execution experience.
                 </div>
             </div>
-            
+
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     <div class="jarvis_partners_img_container swiper-slide">
@@ -384,7 +383,7 @@
             </div>
         </div>
     </section>
-    
+
     <!-- start collaboratos part -->
     <section class="JV-collaboration dis-col-center">
         <div class="container">
@@ -550,91 +549,100 @@
                     </div>
 
                     <div class="Right-side-contact">
-                        <form action="" method="post" onsubmit="">
+                        <form action="" method="get" onsubmit="return false">
                             <div class="form-group">
                                 <label for="form-label">We are</label>
-                                <div class="select-options">
-                                    <label for="" class="option selected">
-                                        <input type="checkbox" value="Broker" checked>Broker</label>
 
-                                    <label for="" class="option">
-                                        <input type="checkbox" value="Wealth Management Firms">Wealth Management
+                                <div class="select-options">
+
+                                    <label for="" class="option selected"  onclick="checkOption('broker')"  id="broker">
+                                        <input type="checkbox" value="Broker" class="checkoption" checked>Broker</label>
+
+
+                                    <label for="" class="option" onclick="checkOption('wealth')" id="wealth">
+                                        <input type="checkbox" value="Wealth Management Firms"
+                                            class="checkoption">Wealth Management
                                         Firms</label>
 
-                                    <label for="" class="option">
-                                        <input type="checkbox" value="Robo Advisors">Robo Advisors</label>
 
-                                    <label for="" class="option">
-                                        <input type="checkbox" value="Research Advisors">Research Advisors</label>
+                                    <label for="" class="option" id="robo" onclick="checkOption('robo')">
+                                        <input type="checkbox" value="Robo Advisors" >Robo Advisors</label>
 
-                                    <label for="" class="option">
-                                        <input type="checkbox" value="Treasury Desk">Treasury Desk</label>
+                                    <label for="" class="option" id="research" onclick="checkOption('research')">
+                                        <input type="checkbox" value="Research Advisors" >Research Advisors</label>
 
-                                    <label for="" class="option">
-                                        <input type="checkbox" value="Fund Houses">Fund Houses</label>
+
+
+                                    <label for="" class="option" id="treasury" onclick="checkOption('treasury')">
+                                        <input type="checkbox" value="Treasury Desk" >Treasury Desk</label>
+
+
+                                    <label for="" class="option" id="fund" onclick="checkOption('fund')" >
+                                        <input type="checkbox" value="Fund Houses">Fund
+                                        Houses</label>
                                 </div>
-                                <div class="input-form">
-
-                                    <div class="row row1">
-                                        <div class="first-row first-name">
-                                            <div class="form-group">
-                                                <label for="first-name" class="input-label"> First Name</label>
-                                                <input type="text" id="first-name" name="first-name"
-                                                    placeholder="First Name">
-                                            </div>
-                                        </div>
-
-                                        <div class="first-row last-name">
-                                            <div class="form-group">
-                                                <label for="last-name" class="input-label">Last Name</label>
-                                                <input type="text" id="last-name" name="last-name"
-                                                    placeholder="Last Name">
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="row row2">
-                                        <div class="first-row email">
-                                            <div class="form-group">
-                                                <label for="email" class="input-label">Email</label>
-                                                <input type="email" id="email" name="email"
-                                                    placeholder="you@comany.com">
-                                            </div>
-                                        </div>
-
-                                        <div class="first-row phone-no">
-                                            <div class="form-group">
-                                                <label for="phone-no" class="input-label">Phone Number</label>
-                                                <div class="country-code">
-                                                    <select name="" class="countries-option">
-                                                        <option value="INDIA" selected>India</option>
-                                                        <option value="US">US</option>
-                                                        <option value="UAE">UAE</option>
-                                                    </select>
-                                                    <input type="number" id="phone-no" name="phone-no"
-                                                        placeholder="+91 (123) 456-7890">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row3">
-                                    <div class="first-row message">
-                                        <div class="form-group">
-                                            <label for="message" class="input-label">How we can help?(Optional)</label>
-                                            <textarea id="message" class="form-control w-100" name="message"
-                                                placeholder="Tell us a little about the project..."></textarea>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <button class="btn btn-enqiry w-100" type="submit"> Get started</button>
                             </div>
-                        </form>
+                            <div class="input-form">
+
+                                <div class="row row1">
+                                    <div class="first-row first-name">
+                                        <div class="form-group">
+                                            <label for="first-name" class="input-label"> First Name</label>
+                                            <input type="text" id="first-name" name="first-name"
+                                                placeholder="First Name">
+                                        </div>
+                                    </div>
+
+                                    <div class="first-row last-name">
+                                        <div class="form-group">
+                                            <label for="last-name" class="input-label">Last Name</label>
+                                            <input type="text" id="last-name" name="last-name" placeholder="Last Name">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row row2">
+                                    <div class="first-row email">
+                                        <div class="form-group">
+                                            <label for="email" class="input-label">Email</label>
+                                            <input type="email" id="email" name="email" placeholder="you@comany.com">
+                                        </div>
+                                    </div>
+
+                                    <div class="first-row phone-no">
+                                        <div class="form-group">
+                                            <label for="phone-no" class="input-label">Phone Number</label>
+                                            <div class="country-code">
+                                                <select name="" class="countries-option">
+                                                    <option value="INDIA" selected>India</option>
+                                                    <option value="US">US</option>
+                                                    <option value="UAE">UAE</option>
+                                                </select>
+                                                <input type="number" id="phone-no" name="phone-no"
+                                                    placeholder="+91 (123) 456-7890">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row3">
+                                <div class="first-row message">
+                                    <div class="form-group">
+                                        <label for="message" class="input-label">How we can help?(Optional)</label>
+                                        <textarea id="message" class="form-control w-100" name="message"
+                                            placeholder="Tell us a little about the project..."></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="btn btn-enqiry w-100" type="submit" onclick="storeData()"> Get
+                                started</button>
                     </div>
+                    </form>
                 </div>
             </div>
+        </div>
         </div>
     </section>
 

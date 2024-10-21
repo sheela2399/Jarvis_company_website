@@ -1,3 +1,4 @@
+
 * {
     padding: 0;
     margin: 0;
@@ -554,7 +555,7 @@ section {
 
 .contact-form {
     flex: 0 0 auto;
-    width: auto;
+    /* width: auto; */
     border-radius: 16px;
     border: 1px solid rgba(21, 102, 214, 0.3);
 }
@@ -596,9 +597,9 @@ section {
     margin-top: 10px;
 }
 
-.select-options input[type="checkbox"]:checked {
+/* .select-options input[type="checkbox"]:checked {
     background-color: #1566d6;
-}
+} */
 
 .select-options input[type="checkbox"] {
     display: none;
@@ -618,12 +619,6 @@ section {
     border-color: blue;
     color: white;
 }
-
-/* .select-options:checked{
-    background-color: blue;
-    border-color: blue;
-    color: white;
-  } */
 
 .input-form .row {
     display: flex;
@@ -704,6 +699,7 @@ textarea.form-control {
     font-style: normal;
     font-size: 18px;
     line-height: 155.556%;
+    cursor: pointer;
 }
 
 /* footer part */
@@ -979,26 +975,33 @@ textarea.form-control {
 
     .JV-sevre .container {
         padding-top: 0;
+       
+    }
+
+    .columns{
+        margin: 0 auto;
     }
 
     .cards-column {
-        padding: 0px 10px;
-        width: 50%;
+        padding: 0px 5px;
+        width: 80%;
+        margin: 0 auto;
     }
 
     .service-box {
-        width: 70%;
+        width: 100%;
     }
 
     .service-box .main-image,
     .service-box .hover-image {
         margin: 5px 0px;
         position: relative;
+        
     }
 
     .service-box img,
     svg {
-        width: 250px;
+        width: 280px;
     }
 
     /* JV-partners */
@@ -1072,14 +1075,23 @@ textarea.form-control {
         width: 100px;
     }
 
-    .blue-background {
-        width: 290px;
-        border-radius: 16px 16px 0 0;
+    .contact-parts{
+        width: 320px;
     }
 
     .Right-side-contact {
         width: 320px;
     }
+
+    .blue-background {
+        width: 350px;
+        border-radius: 16px 16px 0 0;
+    }
+
+    .left-side-contact {
+        width: 320px;
+    }
+
 
     /* footer */
     .footer-head {
